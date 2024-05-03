@@ -107,6 +107,8 @@
       "type": "select",
       "proxies": [
         "💡 自动选择"
+        "⚖️ 负载均衡-轮询"
+        "⚖️ 负载均衡-散列"
       ]
     },
     {
@@ -114,6 +116,22 @@
       "type": "url-test",
       "url": "http://www.gstatic.com/generate_204",
       "interval": 300,
+      "proxies": []
+    },
+        {
+      "name": "⚖️ 负载均衡-轮询",
+      "type": "load-balance",
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": 300,
+      "strategy": "consistent-hashing",
+      "proxies": []
+    },
+    {
+      "name": "⚖️ 负载均衡-散列",
+      "type": "load-balance",
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": 300,
+      "strategy": "round-robin",
       "proxies": []
     },
     {
