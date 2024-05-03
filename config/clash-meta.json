@@ -134,7 +134,7 @@
       "interval": 300,
       "strategy": "round-robin",
       "proxies": []
-    },  
+    },
     {
       "name": "👉 国内网站",
       "type": "select",
